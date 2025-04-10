@@ -1,0 +1,76 @@
+html, body {
+
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+.wrapper {
+    background: white;
+}
+.header {
+    background:rgb(247, 64, 64);
+    display: flex;
+    position: center;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 1px;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.photoFeed {
+    background:rgb(255, 139, 139);
+    display: flex;
+    position: center;
+    text-align: center;
+    justify-content: center;
+    overflow-y: scroll;
+}
+
+.photoFrame1 {
+    background:yellow;
+    width: 550px;
+    height: 500px;
+    border-color: black;
+    border-width: 5px;
+    display: grid;
+    margin: 50px;
+}
+
+.photoHeader1 {
+    background: blueviolet;
+    display: inline-block;
+    height: 40px; 
+    align-content: center;
+}
+
+.photoTitle1 {
+    background: rgb(245, 86, 86);
+    display: flex;
+    float: left;
+    
+}
+
+.photoDate1 {
+    background: rgb(131, 47, 47);
+    display: flex;
+    float: right;
+}
+
+.photoFile1 {
+    background: rgb(226, 147, 43);
+    size: ;
+    align-items: center;
+}
+.photoFile1 img {
+    object-fit: contain;
+    max-width: 100%;
+}
+
+.photoDescription1 {
+    background: blueviolet;
+    display: block;
+    height: 80px; 
+    align-content: center;
+}
+
