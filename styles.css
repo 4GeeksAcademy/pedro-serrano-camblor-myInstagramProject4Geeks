@@ -1,76 +1,82 @@
 html, body {
-
     margin: 0;
     padding: 0;
     height: 100%;
   }
 .wrapper {
     background: white;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
 }
 .header {
-    background:rgb(247, 64, 64);
+    background-color:rgb(189, 183, 183);
     display: flex;
-    position: center;
-    text-align: center;
+    position: sticky;
     justify-content: center;
     margin-bottom: 1px;
-    flex-direction: column;
-    overflow: hidden;
+    top: 0;
+    z-index: 10;
 }
 
 .photoFeed {
-    background:rgb(255, 139, 139);
+    background-color:rgb(216, 208, 208);
     display: flex;
-    position: center;
-    text-align: center;
-    justify-content: center;
-    overflow-y: scroll;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: flex-start;
+    align-items: center;
+    overflow-y: auto;
+    gap: 60px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
-.photoFrame1 {
-    background:yellow;
+.photoFrame {
+    background-color:yellow;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
     width: 550px;
     height: 500px;
-    border-color: black;
-    border-width: 5px;
-    display: grid;
-    margin: 50px;
 }
 
-.photoHeader1 {
-    background: blueviolet;
-    display: inline-block;
-    height: 40px; 
-    align-content: center;
-}
-
-.photoTitle1 {
-    background: rgb(245, 86, 86);
+.photoHeader {
+    background-color: whitesmoke;
     display: flex;
-    float: left;
-    
-}
-
-.photoDate1 {
-    background: rgb(131, 47, 47);
-    display: flex;
-    float: right;
-}
-
-.photoFile1 {
-    background: rgb(226, 147, 43);
-    size: ;
+    justify-content: space-between;
     align-items: center;
-}
-.photoFile1 img {
-    object-fit: contain;
-    max-width: 100%;
+    height: 8%; 
 }
 
-.photoDescription1 {
-    background: blueviolet;
-    display: block;
-    height: 80px; 
-    align-content: center;
+.photoTitle {
+    font-weight: bold;
+    padding-left: 10px;
+}
+
+.photoDate {
+    font-style: italic;
+    padding-right: 10px;
+}
+
+.photoFile {
+    background-color: red;
+    flex-grow: 1;
+    height: 80%;
+    background-size: cover;
+    background-position: center;
+}
+.photoFile img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.photoDescription {
+    background: whitesmoke;
+    display: flex;
+    height: 12%; 
+    align-items: center;
+    padding-left: 12px;
 }
 
